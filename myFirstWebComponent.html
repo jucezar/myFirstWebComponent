@@ -1,6 +1,10 @@
 <template>
     <lightning-card title="ContactInformation" icon-name="custom:custom14">
         <div class="slds-m-around_medium">
+            <!--
+             Tag responsável por iterar na lista contatos. A chave utilizada será cada
+             Id de cada objeto Contact do array criado no arquivo myFirstWebComponent.js  
+            -->
            <template for:each={contacts} for:item="contact">
               <div key = {contact.Id}>
                  {contact.Name}, {contact.Title}

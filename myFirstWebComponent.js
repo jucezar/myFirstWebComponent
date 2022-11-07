@@ -1,6 +1,8 @@
 
+// importando a biblioteca do lightning do salesforce e a iterator @track
 import { LightningElement, track } from 'lwc';
 
+//criando a classe MyFirstWebComponent herdando do lightningElement
 export default class MyFirstWebComponent extends LightningElement {
 
     @track
